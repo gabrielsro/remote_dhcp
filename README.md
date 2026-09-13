@@ -12,7 +12,7 @@ This repository contains an automated network lab using **Containerlab** and **A
 ## Topology
 * `dhcp-server`: Alpine Linux container running `dnsmasq`
 * `sw-access-1`: Access layer Arista cEOS switch passing DHCP traffic
-* `client-01`: Client node receiving dynamic IP assignments
+* `client-01`: Alpine Linux container receiving dynamic IP assignments
 
 ## Quick Start
 

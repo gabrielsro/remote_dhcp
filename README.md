@@ -16,6 +16,8 @@ This repository contains an automated network lab using **Containerlab** and **A
 * `sw-access-2`: Access layer Arista cEOS switch passing DHCP traffic
 * `client-01`: Alpine Linux container receiving dynamic IP assignments
 
+<img src="topology.svg" alt="Remote DHCP lab topology" width="100%"/>
+
 ## Quick Start
 
 ### 1. Prerequisites

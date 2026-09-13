@@ -11,7 +11,9 @@ This repository contains an automated network lab using **Containerlab** and **A
 
 ## Topology
 * `dhcp-server`: Alpine Linux container running `dnsmasq`
+* `sw-distribution-1`: Distribution layer Arista cEOES switch
 * `sw-access-1`: Access layer Arista cEOS switch passing DHCP traffic
+* `sw-access-2`: Access layer Arista cEOS switch passing DHCP traffic
 * `client-01`: Alpine Linux container receiving dynamic IP assignments
 
 ## Quick Start

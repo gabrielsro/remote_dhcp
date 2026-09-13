@@ -1,0 +1,24 @@
+name: remote_dhcp
+
+topology:
+  nodes:
+    dhcp-server:
+      kind: linux
+      image: ghcr.io/srl-labs/network-multitool:latest
+      binds:
+        - ./configs/dnsmasq.conf:/etc/dnsmasq.conf
+      exec:
+        - apk update
+        - apk add dnsmasq
+        - ip addr add 10.1.0.2/24 dev eth1
+        - ip route add 10.0.1.0/24 via 10.1.0.3 dev eth1
+        - dnsmasq --conf-file=/etc/dnsmasq.conf
+    sw-access-1:
+      kind: arista_ceos
+      image: ceos:4.32.0F
+    client-01:
+      kind: linux
+      image: ghcr.io/srl-labs/network-multitool:latest
+      exec:
+        - ip route del default dev eth0
+        - udhcpc -b -i eth

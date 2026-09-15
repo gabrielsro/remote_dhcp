@@ -23,7 +23,7 @@ topology:
     sw-access-2:
       kind: arista_ceos
       image: ceos:4.32.0F
-      startup-config: ./configs/sw-access-1/ceos-custom-startup.cfg
+      startup-config: ./configs/sw-access-2/ceos-custom-startup.cfg
     sw-access-3:
       kind: arista_ceos
       image: ceos:4.32.0F

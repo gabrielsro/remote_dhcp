@@ -145,7 +145,7 @@
     },
     {
       "id": "freeText_1789331283343",
-      "text": "Cameras VLAN\nVLAN ID: 30\nSubnet: 10.1.3.0/24",
+      "text": "Cameras VLAN\nVLAN ID: 20\nSubnet: 10.1.2.0/24",
       "position": {
         "x": 397.4673992947147,
         "y": 193.76255736834952
@@ -162,7 +162,7 @@
     },
     {
       "id": "freeText_1789331324444",
-      "text": "Sales VLAN\nVLAN ID: 30\nSubnet: 10.1.3.0/24",
+      "text": "Sales VLAN\nVLAN ID: 10\nSubnet: 10.1.3.0/24",
       "position": {
         "x": 397.9839790241133,
         "y": 57.11585839271446
@@ -179,7 +179,7 @@
     },
     {
       "id": "freeText_1789331337627",
-      "text": "Guests VLAN\nVLAN ID: 30\nSubnet: 10.1.3.0/24",
+      "text": "Guests VLAN\nVLAN ID: 40\nSubnet: 10.1.4.0/24",
       "position": {
         "x": 400.05923237516,
         "y": -81.86885101539275
